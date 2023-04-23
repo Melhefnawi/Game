@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             } else {
                 let gameType = this.getAttribute("data-type");
-                runGame("data-type");
+                runGame(gameType);
             }
         });
     }
@@ -28,7 +28,7 @@ function runGame(gameType) {
         displayAdditionalQuestion(num1, num2);
     } else {
         alert(`unknow game type:${gameType}`);
-        throw `unknow gameType:${gameType}.aborting!`;
+        throw `unknow gameType:${gameType}.Aborting!`;
     }
 
 }
