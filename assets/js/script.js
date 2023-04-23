@@ -33,6 +33,7 @@ function runGame(gameType) {
 
 }
 function checkAnswer() {
+
     let userAnswer = parseInt(document.getElementById("answer-box").value);
     let calculatedAnswer = calculateCorrectAnswer();
     let isCorrect = userAnswer === calculatedAnswer[0];
