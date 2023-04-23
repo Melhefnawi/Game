@@ -10,10 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
             } else {
                 let gameType = this.getAttribute("data-type");
-                alert(`you clicked ${gameType}`);
+                runGame("data-type");
             }
         });
     }
+    runGame("addition");
 });
 
 
@@ -36,7 +37,9 @@ function incrementScore() {
 function incrementWrongAnswer() {
 
 }
-function displayAdditionalQuestion() {
+function displayAdditionalQuestion(operand1,operand2) {
+document.getElementById("operand1").textContent=operand1;
+document.getElementById("operand2").textContent=operand2;
 
 }
 function displaySubtractQuestion() {
